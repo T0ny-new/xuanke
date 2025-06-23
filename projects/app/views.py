@@ -1,12 +1,10 @@
 import json
 import time
-
 from django.core import serializers
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 from django.shortcuts import render
-
 from app import models
 
 '''
@@ -363,7 +361,6 @@ def project_data_info(request):
     return successData(resl)
 
 def project_data_grade(request):
-
 
     select_projects = []
 
