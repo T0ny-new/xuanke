@@ -1,0 +1,85 @@
+<div class="fater-logo">
+    学生选课管理系统
+</div>
+
+{% if request.session.user.type == 0 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/projects/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/colleges">
+            <span class="fa fa-building-o"></span> 学院信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/majors">
+            <span class="fa fa-bookmark"></span> 专业信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/grades">
+            <span class="fa fa-id-badge"></span> 班级信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/projects">
+            <span class="fa fa-book"></span> 课程信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/students">
+            <span class="fa fa-group"></span> 学生信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/teachers">
+            <span class="fa fa-drivers-license"></span> 教师信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/selectLogs">
+            <span class="fa fa-cubes"></span> 选课记录管理
+        </a>
+    </div>
+</div>
+{% elif  request.session.user.type == 1 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/projects/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/workPalns/">
+            <span class="fa fa-cubes"></span> 我的上课安排
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/selectLogs">
+            <span class="fa fa-cubes"></span> 学生信息查询
+        </a>
+    </div>
+</div>
+{% elif  request.session.user.type == 2 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/projects/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/selectLogs">
+            <span class="fa fa-cubes"></span> 我的选课列表
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/students/projects">
+            <span class="fa fa-cubes"></span> 我的选课记录
+        </a>
+    </div>
+</div>
+{% endif %}
+

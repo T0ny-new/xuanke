@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+{% include 'templates/head.html' %}
+<body>
+<div class="fater-layout-header">
+    {% include 'templates/nav.html' %}
+</div>
+
+<div class="fater-layout-menus">
+    {% include 'templates/menus.html' %}
+</div>
+
+<div class="fater-layout-body">
+    <blockquote class="fater-blockquote">
+        您好，欢迎使用学生选课管理系统
+        <a href="http://www.python222.com/post/10" target='_blank'><font color=red>Python222收藏整理</font></a>
+    </blockquote>
+    <div class="fater-panel">
+        <div class="fater-pannel-title">
+            系统信息
+        </div>
+        <div class="fater-pannel-body">
+            <table class="fater-table">
+                <tbody>
+                <tr>
+                    <td>系统名称</td>
+                    <td>学生选课管理系统</td>
+                </tr>
+                <tr>
+                    <td>开发环境</td>
+                    <td>Python 3.11 + Django + MySQL</td>
+                </tr>
+                <tr>
+                    <td>运行环境</td>
+                    <td>Django + MySQL</td>
+                </tr>
+                <tr>
+                    <td>开发技术</td>
+                    <td>Jquery(前端)+Django(后端)</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="fater-panel">
+        <div class="fater-pannel-title">
+            开发团队
+        </div>
+        <div class="fater-pannel-body">
+            <table class="fater-table">
+                <tbody>
+                <tr>
+                    <td>作者</td>
+                    <td>You</td>
+                </tr>
+                <tr>
+                    <td>班级</td>
+                    <td>计算机科学学院1班</td>
+                </tr>
+                <tr>
+                    <td>学号</td>
+                    <td>020201819027</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="fater-layout-foot">
+    {% include 'templates/foot.html' %}
+</div>
+
+{% include 'templates/commjs.html' %}
+</body>
+</html>
